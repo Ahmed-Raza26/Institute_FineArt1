@@ -1,0 +1,145 @@
+﻿@model IEnumerable<Institute_FineArt1.Models.BestArts>
+
+<body class="dark">
+
+    <!-- SIDEBAR -->
+    @Html.Partial("dsidebar") <!-- SIDEBAR -->
+    <!-- CONTENT -->
+    <section id="content">
+        @Html.Partial("dnavbar")
+
+        <!-- Table Container with Artwork List -->
+        <div class="container-fluid bg-white py-3 ">
+            <div class="container-fluid bg-white py-3 ">
+                <!-- NAVBAR -->
+                <div class="head-title">
+                    <div class="left">
+                        <h5 class="text-light">FineArt >> <span class="text-light fs-5">Selected Arts</span></h5>
+                    </div>
+                </div>
+
+                <!-- Filter Input -->
+                <div class="filter-container" style="display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-bottom: 0;">
+                    <label for="filterInput" style="font-weight: bold;">Filter by Art ID:</label>
+                    <input type="text" id="filterInput" onkeyup="filterTable()" placeholder="Enter Art ID..." style="padding: 4px; width:20%; border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+
+                <div class="custom-table-container ">
+                    <h3 class="custom-text-center custom-mt-3 text-dark m-4">Selected Artworks</h3>
+                    <!-- Display error message if exists -->
+                    @if (TempData["errormessage"] != null)
+                    {
+                        <div class="alert alert-danger">
+                            @TempData["errormessage"]
+                        </div>
+                    }
+
+                    <table id="artTable">
+                        <thead>
+                            <tr>
+                                <th>Art ID</th>
+                                <th>Image</th>
+                                <th>Title</th>
+                                <th>Artist</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Upload Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.ArtId</td>
+                                    <td>
+                                        @if (item.Painting != null && !string.IsNullOrEmpty(item.Painting.ArtImage))
+                                        {
+                                            <a href="~/StudentPainting/@item.Painting.ArtImage" target="_blank">
+                                                <img src="~/StudentPainting/@item.Painting.ArtImage" alt="Art" />
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            <span>No Image</span>
+                                        }
+                                    </td>
+                                    <td>@(item.Painting?.ArtTitle ?? "No Title")</td>
+                                    <td>@(item.Painting?.User1?.Name ?? "Unknown Artist")</td>
+                                    <td>@item.Painting?.ArtPrice</td>
+                                    <td>@item.Status</td>
+                                    <td>@item.UploadDate</td>
+                                    <td>
+                                        <button class="custom-edit-btn" onclick="editArt(@item.Id, @item.ArtId,'@item.Painting?.ArtImage', '@item.Painting?.ArtTitle', @item.Painting?.ArtPrice, '@item.Status')"><i class='bx bxs-edit-alt'></i></button>
+                                        <form method="post" style="display:inline;">
+                                            <input type="hidden" name="id" value="@item.Id" />
+                                            <a asp-controller="Dashboard" asp-action="Deleteselection" asp-route-id="@item.Id" class="custom-delete-btn"><i class='bx bxs-trash-alt'></i></a>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Form and Image Display Section -->
+                <div class="form-and-image-container">
+                    <!-- Edit Form Section -->
+                    <div class="custom-edit-form-container" id="editForm">
+                        <h3>Edit Artwork</h3>
+                        <form method="post">
+                            <input type="hidden" id="editId" name="Id">
+                            <label>Art ID</label>
+                            <input type="text" id="editArtId" name="ArtId" readonly>
+                            <input type="hidden" id="editArtimage" name="ArtId" readonly>
+                            <label>Title</label>
+                            <input type="text" id="editTitle" name="ArtTitle" readonly>
+                            <label>Price</label>
+                            <input type="number" id="editPrice" name="Price" readonly>
+                            <label>Status</label>
+                            <select id="editStatus" name="Status">
+                                <option value="Available">Available</option>
+                                <option value="Sold">Sold</option>
+                            </select>
+                            <button type="submit" class="custom-save-btn">Save Changes</button>
+                        </form>
+                    </div>
+
+                    <!-- Artwork Image Display Section -->
+                    <div class="custom-image-display" id="imageDisplay">
+                        <h3>Artwork Image</h3>
+                        <img id="artImage" src="~/img/exhibition/1-4.png" alt="Artwork Image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function editArt(id, artId, artimage, title, price, status) {
+            document.getElementById('editId').value = id;
+            document.getElementById('editArtId').value = artId;
+            document.getElementById('editArtimage').value = artimage;
+            document.getElementById('editTitle').value = title;
+            document.getElementById('editPrice').value = price;
+            document.getElementById('editStatus').value = status;
+            document.getElementById('editForm').scrollIntoView({ behavior: 'smooth' });
+            var imageUrl = "/StudentPainting/" + artimage;
+            document.getElementById('artImage').src = imageUrl;
+        }
+
+        function filterTable() {
+            var input = document.getElementById("filterInput");
+            var filter = input.value.toUpperCase();
+            var table = document.getElementById("artTable");
+            var tr = table.getElementsByTagName("tr");
+            for (var i = 1; i < tr.length; i++) {
+                var td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    var txtValue = td.textContent || td.innerText;
+                    tr[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+                }
+            }
+        }
+    </script>
+</body>

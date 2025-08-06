@@ -1,0 +1,157 @@
+﻿@model BestArts
+@Html.Partial("NavMenu")
+
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <!--==============================
+        Breadcumb
+        ==============================-->
+        <div class="breadcumb-wrapper text-center" data-bg-src="~/img/bg/breadcrumb-bg.png">
+            <div class="container">
+                <div class="breadcumb-content">
+                    <h1 class="breadcumb-title">Shop Details</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--==============================
+        Product Details
+        ==============================-->
+        <section class="product-details space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="product-thumb">
+                            <div class="img">
+                                <img src="~/StudentPainting/@Model.Painting.ArtImage" alt="Product Image" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-7 align-self-center">
+                        <div class="product-about">
+                            <p class="price">PKR @Model.Painting.ArtPrice</p>
+                            <h2 class="product-title">@Model.Painting.ArtTitle</h2>
+                            <div class="product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                    <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">2</span> customer reviews</span>
+                                </div>
+                                <a asp-action="ShopDetails" class="woocommerce-review-link">(<span class="count">2</span> customer reviews)</a>
+                            </div>
+                            <p class="text">@Model.Painting.ArtDetail</p>
+                            <div class="checklist">
+                                <ul>
+                                    <li><i class="far fa-check-circle"></i> Lifetime structural, one-year face finish warranty</li>
+                                    <li><i class="far fa-check-circle"></i> Mapped from “Center Caps” under ” treatment” tab</li>
+                                    <li><i class="far fa-check-circle"></i> Fully compatible with OEM equipment</li>
+                                </ul>
+                            </div>
+                            <div class="actions">
+                                @if (Model.Status == "Available")
+                                {
+                                    <a class="btn fs-5 font-weight-light " asp-controller="Home" asp-action="OrderCheckout" asp-route-id="@Model.Id">Buy Now</a>
+                                }
+                                else if (Model.Status != "Available")
+                                {
+                                    <p class="border border-danger fs-5 fw-bold text-white bg-danger popup-content py-2 px-4">Sold</p>
+                                }
+                            </div>
+                            <div class="product_meta">
+                                <span class="sku_wrapper">Art By: <span class="sku">@Model.Painting.User1.Name</span></span>
+                                <span class="posted_in">Category: <a asp-controller="Home" asp-action="Shop" rel="tag">Art & Exhibition</a></span>
+                                <span>Tags: <a asp-controller="Home" asp-action="Shop">Exhibition</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-tab-area">
+                    <ul class="nav product-tab-style1" id="productTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="description-tab" data-bs-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false">Description</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="true">Reviews (03)</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="productTabContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <p>Credibly negotiate emerging materials whereas clicks-and-mortar intellectual capital.</p>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                            <div class="comments-wrap mt-0">
+                                <ul class="comment-list">
+                                    @{
+                                        var reviews = ViewBag.Reviews as List<Review>;
+                                    }
+                                    @if (reviews != null && reviews.Any())
+                                    {
+                                        foreach (var review in reviews)
+                                        {
+                                            <li class="comment-item">
+                                                <div class="post-comment">
+                                                    <div class="comment-avater">
+                                                        <img src="~/UserImages/@review.User.Image"
+                                                             alt="Comment Author"
+                                                             style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <span class="commented-on">@review.ReviewDate.ToString("dd MMM, yyyy")</span>
+                                                        <h3 class="name">@review.User.Name</h3>
+                                                        <p class="text">@review.Comment</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <li class="comment-item text-muted">@ViewBag.Message</li>
+                                    }
+                                </ul>
+                            </div>
+                            <!-- Comment Form -->
+                            <form method="post" asp-action="ShopDetails">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="PaintingId" value="@Model.Id" />
+                                <div class="comment-form">
+                                    <h3 class="blog-inner-title">Leave a Reply</h3>
+                                    <div class="row">
+                                        <div class="col-md-6 form-group">
+                                            <input type="text" class="form-control"
+                                                   value="@Context.Session.GetString("user")"
+                                                   name="Name" placeholder="Your Name" required readonly
+                                                   />
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <input type="email" class="form-control"
+                                                   value="@Context.Session.GetString("email")"
+                                                   name="Email" placeholder="Email Address" required readonly />
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <textarea class="form-control"
+                                                      placeholder="Type Your Message" name="Comment" required></textarea>
+                                        </div>
+                                        <div class="col-12 form-group mb-0">
+                                            <button class="btn btn-primary" type="submit">Submit Review</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==============================
+        Footer Area
+        ==============================-->
+        @Html.Partial("Footer")
+    </div>
+</div>
+
+<!-- Scroll To Top -->
+<div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+</div>

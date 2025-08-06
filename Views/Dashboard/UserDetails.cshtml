@@ -1,0 +1,103 @@
+﻿@model IEnumerable<Institute_FineArt1.Models.Users>
+<body class="dark">
+    <!-- SIDEBAR -->
+    @Html.Partial("dsidebar") <!-- SIDEBAR -->
+    <!-- CONTENT -->
+    <section id="content">
+        @Html.Partial("dnavbar") <!-- Navbar -->
+
+        <div class="container-fluid bg-white py-3" style="height:auto;">
+            <div class="container-fluid bg-white py-3 ">
+                <!-- NAVBAR -->
+                <div class="head-title">
+                    <div class="left">
+                        <h5 class="text-light">FineArt >> <span class="text-light fs-5">User Details</span></h5>
+
+                    </div>
+
+                </div>
+            <!-- Stats Container with Inline Styles -->
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+                <div style="background-color: #f8f9fa; border-radius: 10px; width: 30%; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <h4 style="margin-bottom: 10px; color: #333;">Total Students</h4>
+                    <p style="font-size: 24px; font-weight: bold; color: #ff6600;">@Model.Count(r => r.Role == "Student")</p>
+                </div>
+                <div style="background-color: #f8f9fa; border-radius: 10px; width: 30%; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <h4 style="margin-bottom: 10px; color: #333;">Total Teachers</h4>
+                    <p style="font-size: 24px; font-weight: bold; color: #ff6600;">@Model.Count(r => r.Role == "Teacher")</p>
+                </div>
+                <div style="background-color: #f8f9fa; border-radius: 10px; width: 30%; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <h4 style="margin-bottom: 10px; color: #333;">Total Managers</h4>
+                    <p style="font-size: 24px; font-weight: bold; color: #ff6600;">@Model.Count(r => r.Role == "Manager")</p>
+                </div>
+            </div>
+
+            <!-- Table Section -->
+            <div class="table-container-user" style="max-height: 500px; overflow-y: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px; margin-top: 10px;">
+                <table class="user-details-table" style="width: 100%; border-collapse: collapse; background-color: whitesmoke;">
+                    <thead>
+                        <tr>
+                            <th style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd; background-color: #ff6600; color: white; font-weight: bold;">User Name</th>
+                            <th style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd; background-color: #ff6600; color: white; font-weight: bold;">Email</th>
+                            <th style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd; background-color: #ff6600; color: white; font-weight: bold;">Contact</th>
+                            <th style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd; background-color: #ff6600; color: white; font-weight: bold;">Role</th>
+                            <th style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd; background-color: #ff6600; color: white; font-weight: bold;">Created Date</th>
+                            <th style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd; background-color: #ff6600; color: white; font-weight: bold;">Status</th>
+                            <th style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd; background-color: #ff6600; color: white; font-weight: bold;">Last Login</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model)
+                        {
+                            <tr>
+                                <td style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd; display: flex; align-items: center;">
+                                    @if (user.Role == "Student")
+                                    {
+                                        <img src="~/UserImages/@user.Image" alt="User Image" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
+                                    }
+                                    else
+                                    {
+                                        <img src="~/asset/StaffImages/@user.Image" alt="User Image" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
+                                    }
+                                    <span>@user.Name</span>
+                                </td>
+                                <td style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd;">@user.Email</td>
+                                <td style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd;">@user.ContactNumber</td>
+                                <td style="padding: 15px; text-align: center; color: #333; font-weight:400; border-bottom: 1px solid #ddd; color: @GetRoleColor(user.Role);">
+                                    @user.Role
+                                </td>
+                                    <td style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd;">@user.CreatedDate.ToString("dd-MM-yy")</td>
+                                <td style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd; color: @GetStatusColor(user.Status);">
+                                    @user.Status
+                                </td>
+                                    <td style="padding: 15px; text-align: center; color: #333; border-bottom: 1px solid #ddd;">@(user.LastLogin.HasValue ? user.LastLogin.Value.ToString("dd-MMM") : "N/A")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+@functions {
+    public string GetRoleColor(string role)
+    {
+        switch (role)
+        {
+            case "Manager":
+                return "red";
+            case "Student":
+                return "green";
+            case "Teacher":
+                return "orange";
+            default:
+                return "black";
+        }
+    }
+
+    public string GetStatusColor(string status)
+    {
+        return status == "Active" ? "green" : "red";
+    }
+}

@@ -1,0 +1,457 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Institute_FineArt1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Institute_FineArt1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\3a1dcdee-8f5c-4129-91b9-c82d40d6456c_15.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\3a1dcdee-8f5c-4129-91b9-c82d40d6456c_15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\421d6dcb-cc99-4ae0-b814-e5ad33203c46_9.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\421d6dcb-cc99-4ae0-b814-e5ad33203c46_9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\4c7348bb-9606-4a1d-b72c-0e258c37ed63_17.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\4c7348bb-9606-4a1d-b72c-0e258c37ed63_17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\4cefafda-9747-4eaa-93d0-8ced5288f1a4_pexels-photo-3107150.jpeg",
+      "PackagePath": "staticwebassets\\StudentPainting\\4cefafda-9747-4eaa-93d0-8ced5288f1a4_pexels-photo-3107150.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\6827a614-58d2-405b-bb67-d58cadaf9bdc_product-1.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\6827a614-58d2-405b-bb67-d58cadaf9bdc_product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\7806578d-2b1c-4c39-a281-eae853700868_pexels-photo-889839.webp",
+      "PackagePath": "staticwebassets\\StudentPainting\\7806578d-2b1c-4c39-a281-eae853700868_pexels-photo-889839.webp"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\824844ab-ee79-45d7-bd89-46c02e0581fe_cart-thumb4.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\824844ab-ee79-45d7-bd89-46c02e0581fe_cart-thumb4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\8593c0ae-140c-4a7d-b123-87f092ad5e61_7.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\8593c0ae-140c-4a7d-b123-87f092ad5e61_7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\948a796e-a33c-4dfb-8abc-bd1b7bc563c7_4.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\948a796e-a33c-4dfb-8abc-bd1b7bc563c7_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\c77740b4-f42a-4117-bf84-1eb20ebfaa2e_12.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\c77740b4-f42a-4117-bf84-1eb20ebfaa2e_12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\f3b51df5-7404-4f4a-9dbf-3d58144f2605_2.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\f3b51df5-7404-4f4a-9dbf-3d58144f2605_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\StudentPainting\\fb666cd0-b85b-4597-9078-b1dd166529f8_graffiti-4k-hd-full-screen-wallpaper-preview.jpg",
+      "PackagePath": "staticwebassets\\StudentPainting\\fb666cd0-b85b-4597-9078-b1dd166529f8_graffiti-4k-hd-full-screen-wallpaper-preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\1a0c84d0-c1c4-4a42-8055-246454aedea3_Screenshot 2024-10-01 144344.png",
+      "PackagePath": "staticwebassets\\UserImages\\1a0c84d0-c1c4-4a42-8055-246454aedea3_Screenshot 2024-10-01 144344.png"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\3b2afb2b-1f63-46f1-abc2-cff4337d2dc2_person_1.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\3b2afb2b-1f63-46f1-abc2-cff4337d2dc2_person_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\48ae841e-045d-4375-9715-285cd06e39bf_person_3.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\48ae841e-045d-4375-9715-285cd06e39bf_person_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\49fbd20d-b58a-43f1-8cb9-4b4687944aa4_person-1.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\49fbd20d-b58a-43f1-8cb9-4b4687944aa4_person-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\54f53c6b-333c-48b0-9232-52425b003543_huzzi2.jfif",
+      "PackagePath": "staticwebassets\\UserImages\\54f53c6b-333c-48b0-9232-52425b003543_huzzi2.jfif"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\7089769b-6063-4ce2-9758-2b1e76c44fca_person_3.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\7089769b-6063-4ce2-9758-2b1e76c44fca_person_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\72851676-5f6e-4d8c-a09a-5b69aa460cdc_wallpaper.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\72851676-5f6e-4d8c-a09a-5b69aa460cdc_wallpaper.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\9e774cac-f7a2-4a54-8bef-72e877f65f6a_pexels-photo-13654564.jpeg",
+      "PackagePath": "staticwebassets\\UserImages\\9e774cac-f7a2-4a54-8bef-72e877f65f6a_pexels-photo-13654564.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\a6853567-673e-44d4-b946-f87f6e1af526_person_4.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\a6853567-673e-44d4-b946-f87f6e1af526_person_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\c9a3637e-2c85-4290-ad0e-e23e7abf26cb_person_1.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\c9a3637e-2c85-4290-ad0e-e23e7abf26cb_person_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\d99424fa-2abf-4cff-92d5-d945c37d1e19_alexander-hipp-iEEBWgY_6lA-unsplash.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\d99424fa-2abf-4cff-92d5-d945c37d1e19_alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\UserImages\\e2885e96-5ca3-4007-9216-be926af48dcc_imge 3.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\e2885e96-5ca3-4007-9216-be926af48dcc_imge 3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\StaffImages\\009bc2ac-f0c1-4aff-be69-c8edd148218c_person_2.jpg",
+      "PackagePath": "staticwebassets\\asset\\StaffImages\\009bc2ac-f0c1-4aff-be69-c8edd148218c_person_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\StaffImages\\390c745a-70d2-452e-a2fd-7a7d0f1ed988_person_1.jpg",
+      "PackagePath": "staticwebassets\\asset\\StaffImages\\390c745a-70d2-452e-a2fd-7a7d0f1ed988_person_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\StaffImages\\847f792d-ae96-45a4-b2f0-b06624729398_albert-dera-ILip77SbmOE-unsplash.jpg",
+      "PackagePath": "staticwebassets\\asset\\StaffImages\\847f792d-ae96-45a4-b2f0-b06624729398_albert-dera-ILip77SbmOE-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\StaffImages\\9a5c4543-4ac4-4ef1-a3cf-b89a7329f6af_authour.png",
+      "PackagePath": "staticwebassets\\asset\\StaffImages\\9a5c4543-4ac4-4ef1-a3cf-b89a7329f6af_authour.png"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\StaffImages\\ada8dd61-52d5-4b88-9c4f-5b610819c1ae_authour.png",
+      "PackagePath": "staticwebassets\\asset\\StaffImages\\ada8dd61-52d5-4b88-9c4f-5b610819c1ae_authour.png"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\StaffImages\\c798c23f-64d8-44d3-b370-fb6cb01b75dd_duman-photography-w3JKo9UgXFY-unsplash.jpg",
+      "PackagePath": "staticwebassets\\asset\\StaffImages\\c798c23f-64d8-44d3-b370-fb6cb01b75dd_duman-photography-w3JKo9UgXFY-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\StaffImages\\d9c405a6-9ebe-47f8-aa9e-03ee8dc74c7a_person_1.jpg",
+      "PackagePath": "staticwebassets\\asset\\StaffImages\\d9c405a6-9ebe-47f8-aa9e-03ee8dc74c7a_person_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\css\\signin.css",
+      "PackagePath": "staticwebassets\\asset\\css\\signin.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\css\\style.css",
+      "PackagePath": "staticwebassets\\asset\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\asset\\img\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\img\\bg.jpg",
+      "PackagePath": "staticwebassets\\asset\\img\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\img\\people.png",
+      "PackagePath": "staticwebassets\\asset\\img\\people.png"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\asset\\js\\script.js",
+      "PackagePath": "staticwebassets\\asset\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\css\\MyArt.css",
+      "PackagePath": "staticwebassets\\css\\MyArt.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\css\\Order.css",
+      "PackagePath": "staticwebassets\\css\\Order.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\css\\wish.css",
+      "PackagePath": "staticwebassets\\css\\wish.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\img\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\img\\person-1.jpg",
+      "PackagePath": "staticwebassets\\img\\person-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\img\\person-1.png",
+      "PackagePath": "staticwebassets\\img\\person-1.png"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\img\\person_1.jpg",
+      "PackagePath": "staticwebassets\\img\\person_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\img\\person_2.jpg",
+      "PackagePath": "staticwebassets\\img\\person_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\img\\person_3.jpg",
+      "PackagePath": "staticwebassets\\img\\person_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\img\\person_4.jpg",
+      "PackagePath": "staticwebassets\\img\\person_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\AHMED\\Desktop\\Ahmed\\Eproject\\MyProject\\Institute_FineArt1\\Institute_FineArt1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Institute_FineArt1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Institute_FineArt1.props",
+      "PackagePath": "build\\Institute_FineArt1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Institute_FineArt1.props",
+      "PackagePath": "buildMultiTargeting\\Institute_FineArt1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Institute_FineArt1.props",
+      "PackagePath": "buildTransitive\\Institute_FineArt1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

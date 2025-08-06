@@ -1,0 +1,125 @@
+﻿@model List<CheckOutOrders>
+
+<body class="dark">
+
+    <!-- SIDEBAR -->
+    @Html.Partial("dsidebar")
+
+    <!-- SIDEBAR -->
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        @Html.Partial("dnavbar")
+        <div class="dashboard-container bg-white">
+            <!-- NAVBAR -->
+            <div class="head-title">
+                <div class="left">
+                    <h5 class="text-light">FineArt >> <span class="text-light fs-5">Dashboard</span></h5>
+                </div>
+            </div>
+            <h2>Admin Dashboard</h2>
+            <div class="statics-container">
+                <div class="static-box">Total Sales:  @ViewBag.TotalOrders</div>
+                <div class="static-box">Total Orders:   @ViewBag.TotalOrders</div>
+                <div class="static-box">Platform Earnings: PKR @ViewBag.TotalEarnings</div>
+                <div class="static-box">Active Users: @ViewBag.ActiveUsers</div>
+            </div>
+            <div class="recent-orders">
+                <h3>Recent Orders</h3>
+                <table class="order-table">
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Amount</th>
+                        <th>Sudents Earning</th>
+
+                        <th>Status</th>
+                    </tr>
+                    @foreach (var order in Model)
+
+                    {
+                        <tr>
+                            <td>@order.OrderId</td>
+                            <td>@order.FullName</td>
+                            <td>PKR @order.Price</td>
+                            <td>PKR @order.SellerEarnings</td>
+                            <td>@order.OrderStatus</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+            <div class="charts-container">
+                <div class="chart-box">
+                    <h3>Sales Analytics</h3>
+                    <canvas id="pieChart" width="300" height="250"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h3>Orders Trend</h3>
+                    <canvas id="lineChart" width="400" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        // Dynamic Orders Data from Model
+        var ordersData = @Html.Raw(Json.Serialize(Model.Select(o => o.Price)));
+        var orderLabels = @Html.Raw(Json.Serialize(Model.Select(o => o.OrderDate.ToString("MMM dd"))));
+
+        // Dynamic Status Count
+        var completedOrders = @Model.Count(o => o.OrderStatus == "Completed");
+        var pendingOrders = @Model.Count(o => o.OrderStatus == "In Progress");
+        var cancelledOrders = @Model.Count(o => o.OrderStatus == "Cancelled");
+
+        // Pie Chart (Orders Status Distribution)
+        const pieCtx = document.getElementById('pieChart').getContext('2d');
+        new Chart(pieCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Completed', 'In Progress', 'Cancelled'],
+                datasets: [{
+                    data: [completedOrders, pendingOrders, cancelledOrders],
+                    backgroundColor: ['#28a745', '#ffc107', '#dc3545']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // Line Chart (Orders Trend Over Time)
+        const lineCtx = document.getElementById('lineChart').getContext('2d');
+        new Chart(lineCtx, {
+            type: 'line',
+            data: {
+                labels: orderLabels,
+                datasets: [{
+                    label: 'Orders Trend',
+                    data: ordersData,
+                    borderColor: '#ff6600',
+                    backgroundColor: 'rgba(255, 102, 0, 0.2)',
+                    borderWidth: 2,
+                    pointBackgroundColor: '#ff6600',
+                    pointRadius: 5,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>

@@ -1,0 +1,117 @@
+﻿@model IEnumerable<Institute_FineArt1.Models.Painting>
+
+<body class="dark">
+
+    <!-- SIDEBAR -->
+    @Html.Partial("dsidebar")<!-- SIDEBAR -->
+    <!-- CONTENT -->
+    <section id="content">
+       
+            @Html.Partial("dnavbar")
+            <!-- Navbar content omitted for brevity -->
+        <div class="container-fluid bg-white py-3 ">
+            <div class="container-fluid bg-white py-3 ">
+                <!-- NAVBAR -->
+                <div class="head-title">
+                    <div class="left">
+                        <h5 class="text-light">FineArt >> <span class="text-light fs-5">View Art</span></h5>
+
+                    </div>
+
+                </div>
+        <div class="table-container">
+            <h3 class="text-center mt-3">Artwork Selection</h3>
+
+            <!-- Displaying Success/Error Messages -->
+           
+
+            @if (TempData.ContainsKey("error1"))
+            {
+                <div class="alert alert-danger">
+                    <strong>@TempData["error1"]</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert">X</button>
+                </div>
+            }
+
+            @if (TempData.ContainsKey("error2"))
+            {
+                <div class="alert alert-danger">
+                    <strong>@TempData["error2"]</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert">X</button>
+                </div>
+            }
+
+            @if (TempData.ContainsKey("success"))
+            {
+                <div class="alert alert-success">
+                    <strong>@TempData["success"]</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert">X</button>
+                </div>
+            }
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Artist Name</th>
+                        <th>Upload Date</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var a in Model)
+                    {
+                        <tr>
+                            <form method="post">
+                            <td><input type="hidden" name="artId" value="@a.ArtId">@a.ArtId</td>
+                            <td>
+                                <a href="~/StudentPainting/@a.ArtImage" target="_blank">
+                                    <img src="~/StudentPainting/@a.ArtImage" alt="Art">
+                                </a>
+                            </td>
+                            <td>@a.ArtTitle</td>
+                            <td>@(a.User1?.Name ?? "Unknown Artist")</td>
+                            <td>@a.UploadedDate</td>
+
+                            <!-- Check if the current ArtId exists in the selected art list -->
+                                @if (ViewBag.selectart != null && ((List<int>)ViewBag.selectart).Contains(a.ArtId))
+                                {
+                                <td>
+                                    <button class="selected-btn">Selected</button>
+                                </td>
+                                }
+                                else
+                                {
+                                <td>
+                                    <button type="submit" class="select-btn">Select</button>
+                                </td>
+                                }
+                            </form>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            </table>
+        </div>
+
+        <!-- New Image Grid Section -->
+        <div class="image-grid-container">
+            <h2>Gallery</h2>
+            <div class="image-grid">
+                @foreach (var a in Model)
+                {
+                    <a href="~/StudentPainting/@a.ArtImage" target="_blank">
+                    <img src="~/StudentPainting/@a.ArtImage" alt="Art">
+                        </a>
+                }
+            </div>
+        </div>
+        </div>
+    </section> <!-- CONTENT -->
+
+    <script src="script.js"></script>
+</body>
+</html>

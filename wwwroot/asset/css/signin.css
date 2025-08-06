@@ -1,0 +1,683 @@
+/* Sign-Up Section */
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+}
+body.dark {
+	--light: #0C0C1E;
+	--grey: #060714;
+	--dark: #FBFBFB;
+}
+#signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:white !important;
+/*    background: var(--grey) !important;*/
+    /* White background */
+    padding: 20px;
+}
+
+/* Container Row */
+#signup .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px; /* Balanced width */
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Left Side Features */
+#signup .col-md-6 {
+    flex: 1;
+    min-width: 300px;
+	justify-content: center;
+}
+
+#signup .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+}
+
+#signup .icon {
+    background: #ff6600;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#signup .icon i {
+    font-size: 28px !important;
+    color: white;
+}
+
+#signup .feature h4 {
+    color: black !important;
+    margin: 0;
+    font-size: 25px !important;
+}
+
+#signup .feature p {
+    color: lightslategray !important;
+    font-size: 18px !important;
+    margin: 0;
+    font-weight : bold !important;
+}
+
+/* Form Styling */
+#signup form {
+    background: rgb(27, 26, 26) !important;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Optimized form width */
+}
+
+#signup h2 {
+    text-align: center;
+    color: #f7f2f2 !important;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Form Fields */
+#signup .form-group {
+    margin-bottom: 15px;
+}
+
+#signup .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+
+/* Focus Effect */
+#signup .form-control:focus {
+    border-color: #ff6600;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+/* Submit Button */
+#signup button {
+    background-color: #ff6600;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#signup button:hover {
+    background-color: #e55b00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #signup .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #signup form {
+        width: 90%;
+    }
+
+    #signup .col-md-6 {
+        text-align: center;
+    }
+
+    #signup .feature {
+        justify-content: center;
+    }
+}
+
+/* Login secion */
+/* .login-container {
+
+   
+} */
+
+#login {
+    background-image: url("/img/bg.jpg") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Dark overlay effect */
+    background-blend-mode: overlay !important; /* Blend image with color */
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: var(--grey);
+}
+
+.login-form {
+	background: rgb(53, 51, 51);
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 500px;
+	height: 300px;
+	text-align: center;
+    padding:10px 30px !important;
+}
+
+.login-form h2 {
+	color: #f7f2f2;
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.login-form .form-group {
+	margin-bottom: 15px;
+}
+
+.login-form input {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 16px;
+	background: #f9f9f9;
+}
+
+.login-form input:focus {
+	border-color: #ff6600;
+	outline: none;
+	box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+.login-form button {
+	background-color: #ff6600;
+	border: none;
+	padding: 12px;
+	width: 100%;
+	border-radius: 6px;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.login-form button:hover {
+	background-color: #e55b00;
+}
+
+.signup-link {
+	margin-top: 15px;
+	color: #f9f9f9;
+}
+
+.signup-link a {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+.signup-link a:hover {
+	text-decoration: underline;
+}
+/*StudentArtSelection*/
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    background-color: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Table Container - Adds Scroll & Shadow */
+.table-container {
+    width: 90%;
+    max-height: 500px; /* Adjust height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft Shadow */
+    border-radius: 10px;
+    background: white;
+    margin-top:10px;
+}
+
+    /* Custom Scrollbar */
+    .table-container::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .table-container::-webkit-scrollbar-thumb {
+        background: #ff6600;
+        border-radius: 5px;
+    }
+
+    .table-container::-webkit-scrollbar-track {
+        background: #f0f0f0;
+    }
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+}
+
+/* Row Hover Effect */
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Image Styling */
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Select Button */
+.select-btn {
+    padding: 7px 15px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.selected-btn {
+    padding: 7px 7px;
+   background-color:slategray;
+    color: white;
+    border: none;
+    cursor: text !important;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.select-btn:hover, .selected-btn:hover {
+    background-color: #e65c00;
+}
+
+/* New Section - Image Grid */
+.image-grid-container {
+    width: 90%;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-radius: 10px;
+}
+
+/* Grid Layout */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important; /* Responsive grid */
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+    /* Grid Images */
+    .image-grid img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+        /* Hover Effect */
+        .image-grid img:hover {
+            transform: scale(1.1);
+        }
+
+
+
+
+
+.custom-table-container {
+    width: auto !important;
+    max-height: 500px; /* Adjust height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft Shadow */
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px !important;
+}
+.custom-table-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.custom-table-container::-webkit-scrollbar-thumb {
+    background: #ff6600;
+    border-radius: 5px;
+}
+
+.custom-table-container::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color:whitesmoke;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.custom-edit-btn, .custom-delete-btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.custom-edit-btn {
+    background-color:black !important;
+    color: white;
+}
+
+.custom-delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.custom-edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.custom-delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Form and Image Display Section */
+.form-and-image-container {
+  
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Edit Form Styling */
+.custom-edit-form-container {
+    width: 45% !important;
+    height : 560px !important;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 30px 1%;
+}
+
+/* Image Display Styling */
+.custom-image-display {
+    width: 45% !important;
+    height : 560px !important;
+    background: white;
+    overflow:hidden;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 30px 1%;
+    text-align: center;
+    float: right;
+}
+
+/* Art Image */
+#artImage {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Edit Form Inputs and Labels */
+input, select {
+    width: 100%;
+    padding: 0px 7px !important;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.custom-save-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+    .custom-save-btn:hover {
+        background-color: #e65c00;
+    }
+
+/* Dark Mode Styling */
+.dark {
+    background-color: #121212;
+    color: white;
+}}
+/* Upper Section: Statistics Boxes */
+/* Upper Section: Statistics Boxes */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow the boxes to wrap on smaller screens */
+    gap: 20px; /* Space between the boxes */
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    width: 30%; /* Each box takes 30% width */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+    .stat-box h4 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .stat-box p {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff6600;
+    }
+
+/* Table Styling */
+.table-container-user {
+    width: 100%;
+    max-height: 500px; /* Adjust height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft Shadow */
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+}
+
+    /* Custom Scrollbar */
+    .table-container-user::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .table-container-user::-webkit-scrollbar-thumb {
+        background: #ff6600;
+        border-radius: 5px;
+    }
+
+    .table-container-user::-webkit-scrollbar-track {
+        background: #f0f0f0;
+    }
+.user-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    margin-top: 20px;
+}
+
+   /* .user-details-table th, .user-details-table td {
+        padding: 10px;
+        text-align: center;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        width: auto!important;
+    }*/
+    .user-details-table th, .user-details-table td {
+        padding: 10px;
+        text-align: center;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        width: 180px; /* Fixed width set kar diya */
+        word-wrap: break-word; /* Content ko wrap karne ke liye */
+        white-space: normal; /* Long words ko bhi wrap karne ke liye */
+    }
+    .user-details-table th {
+        background-color: #ff6600;
+        color: white;
+        font-weight: bold;
+    }
+
+/* Scrollable Table */
+
+/*Dashboard*/
+/*/ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}*/
+
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height:100% !important;
+}
+
+.statics-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.static-box {
+    background-color: #ff6600;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recent-orders {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .order-table th, .order-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+.order-table th {
+    background-color: #ff6600;
+    color: white;
+}
+.charts-container {
+    display: flex;
+    gap: 20px;
+}
+
+.chart-box {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}

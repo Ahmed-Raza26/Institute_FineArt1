@@ -1,0 +1,140 @@
+﻿@model List<CheckOutOrders>
+
+<body class="dark">
+
+    <!-- SIDEBAR -->
+    @Html.Partial("dsidebar") <!-- SIDEBAR -->
+    <!-- CONTENT -->
+    <section id="content">
+        @Html.Partial("dnavbar")
+
+        <!-- Table Container with Artwork List -->
+        <div class="container-fluid bg-white py-3 ">
+            <div class="container-fluid bg-white py-3 ">
+                <!-- NAVBAR -->
+                <div class="head-title">
+                    <div class="left">
+                        <h5 class="text-light">FineArt >> <span class="text-light fs-5">Order Details</span></h5>
+
+                    </div>
+
+                </div>
+            <div class="custom-table-container ">
+                    <h3 class="custom-text-center custom-mt-3 text-dark m-4">Orders List</h3>
+
+                <!-- Display error message if exists -->
+                @if (TempData["errormessage"] != null)
+                {
+                    <div class="alert alert-danger">
+                        @TempData["errormessage"]
+                    </div>
+                }
+
+
+                <table>
+                    <thead>
+                        <tr>
+
+                            <th>OrderID</th>
+                            <th>ArtID</th>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Customer</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Order Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td>@item.OrderId</td>
+                                <td>@item.TopArtId</td>
+                                <td>
+                                    @if (item.topart != null && !string.IsNullOrEmpty(item.topart.Painting?.ArtImage))
+                                    {
+                                        <a href="~/StudentPainting/@item.topart.Painting.ArtImage" target="_blank">
+                                            <img src="~/StudentPainting/@item.topart.Painting.ArtImage" alt="Art" />
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <span>No Image</span>
+                                    }
+                                </td>
+                                <td>@(item.topart?.Painting?.ArtTitle ?? "No Title")</td>
+                                <td>@(item.topart?.Painting?.User1?.Name ?? "Unknown Customer")</td>
+                                <td>PKR @item.Price</td>
+                                <td>@item.OrderStatus</td>
+                                <td>@item.OrderDate</td>
+                                <td>
+                                        <button class="custom-edit-btn" onclick="editArt(@item.OrderId, @item.TopArtId,'@item.topart?.Painting?.ArtImage', '@item.topart?.Painting?.ArtTitle', @item.Price, '@item.OrderStatus')"><i class='bx bxs-edit-alt'></i></button>
+                                   @*  <form method="post" style="display:inline;">
+                                        <input type="hidden" name="id" value="@item.OrderId" />
+                                        <a asp-controller="Dashboard" asp-action="Deleteselection" asp-route-id="@item.OrderId" class="custom-delete-btn">Delete</a>
+                                    </form> *@
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Form and Image Display Section -->
+            <div class="form-and-image-container">
+                <!-- Edit Form Section -->
+                <div class="custom-edit-form-container" id="editForm">
+                    <h3>Edit Artwork</h3>
+                    <form method="post">
+                        <input type="hidden" id="editId" name="OrderId">
+                        <label> OrderID</label>
+                        <input type="text" id="editArtId" name="ArtId" readonly>
+                        <input type="hidden" id="editArtimage" name="ArtId" readonly>
+
+                        <label>Title</label>
+                        <input type="text" id="editTitle" name="ArtTitle" readonly>
+                        <label>Price</label>
+                        <input type="number" id="editPrice" name="Price" readonly>
+                        <label>Status</label>
+                        <select id="editStatus" name="Status">
+                            <option value="" disabled>Select</option>
+                            <option value="In Progress">In Process</option>
+                            <option value="Cancelled">Cancelled</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                        <button type="submit" class="custom-save-btn">Save Changes</button>
+                    </form>
+                </div>
+
+                <!-- Artwork Image Display Section -->
+                <div class="custom-image-display" id="imageDisplay">
+                    <h3>Artwork Image</h3>
+                    <img id="artImage" src="~/img/exhibition/1-4.png" alt="Artwork Image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function editArt(id, artId, artimage, title, price, status) {
+            // Populate the form fields with the artwork data
+            document.getElementById('editId').value = id;
+            document.getElementById('editArtId').value = artId;
+            document.getElementById('editArtimage').value = artimage;
+            document.getElementById('editTitle').value = title;
+            document.getElementById('editPrice').value = price;
+            document.getElementById('editStatus').value = status;
+
+            // Scroll to the edit form
+            document.getElementById('editForm').scrollIntoView({ behavior: 'smooth' });
+
+            // Update the image display section if the image is available
+            var imageUrl = "/StudentPainting/" + artimage; // Assuming the image name is based on ArtId
+            document.getElementById('artImage').src = imageUrl; // Set the new image URL
+        }
+    </script>
+
+</body>

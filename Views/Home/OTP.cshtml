@@ -1,0 +1,23 @@
+﻿@Html.Partial("NavMenu")
+<div class="container-sn">
+    <form method="post">
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Check your email for verification code</label>
+            <input type="number" name="num" class="form-control" id="num" placeholder="Enter 4 digit code here">
+            @* <span asp-validation-for="Email" class="text-danger small"></span> *@
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" id="btn-signup" class="btn btn-outline-success">Verify</button>
+
+        </div>
+        @if (TempData.ContainsKey("otpmsg"))
+        {
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>@TempData["otpmsg"]</strong>
+            </div>
+        }
+    </form>
+</div>
+@Html.Partial("footer")

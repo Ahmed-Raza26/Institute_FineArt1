@@ -1,0 +1,69 @@
+﻿@model Painting
+@Html.Partial("NavMenu")
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <!--==============================
+        Breadcumb
+        ==============================-->
+        <div class="breadcumb-wrapper text-center" data-bg-src="~/img/bg/breadcrumb-bg.png">
+            <!-- bg animated image/ -->
+            <div class="container">
+                <div class="breadcumb-content">
+                    <h1 class="breadcumb-title">Upload Painting</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="signup-container">
+            <div class="signup-content">
+                <!-- Left Section -->
+                <div class="signup-image">
+                    <img src="~/img/blog/blog_1_2.png" alt="Upload Painting Illustration" width="100%" height="100%" />
+                </div>
+
+                <!-- Right Section -->
+                <div class="signup-form-section">
+                    <h2>Upload Your Painting</h2>
+                    @if (TempData.ContainsKey("ArtUpload"))
+                    {
+
+                        <div class="alert alert-success alert-dismissible">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert">X</button>
+                            <strong>@TempData["ArtUpload"]</strong>
+                        </div>
+                    }
+                    <form class="signup-form" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="painting">Upload Painting</label>
+                            <input type="file" class="form-control" id="painting" asp-for="ArtImage" accept="image/*">
+                            <span asp-validation-for="ArtImage" class="text-danger small"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="painting-details">Art Title</label>
+                            <input type="text" id="painting-title" asp-for="ArtTitle" placeholder="Give Suitable Title to your painting"  required></input>
+                            <span asp-validation-for="ArtTitle" class="text-danger small"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="painting-details">Art Price</label>
+                            <input type="text" id="painting-title" asp-for="ArtPrice" placeholder="Give Suitable Price to your painting"  required></input>
+                            <span asp-validation-for="ArtPrice" class="text-danger small"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="painting-details">Art Details</label>
+                            <textarea id="painting-details" asp-for="ArtDetail" placeholder="Provide details about your painting" rows="4" required></textarea>
+                            <span asp-validation-for="ArtDetail" class="text-danger small"></span>
+                        </div>
+
+                      
+                        <button type="submit" class="btn-submit">Submit Painting</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        @Html.Partial("Footer")
+    </div>
+</div>

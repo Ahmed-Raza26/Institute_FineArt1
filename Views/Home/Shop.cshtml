@@ -1,0 +1,115 @@
+﻿@model IEnumerable<Institute_FineArt1.Models.BestArts>
+      
+@Html.Partial("NavMenu")
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <!--==============================
+        Breadcumb
+        ============================== -->
+        <div class="breadcumb-wrapper text-center" data-bg-src="~/img/bg/breadcrumb-bg.png">
+            <!-- bg animated image/ -->
+            <div class="container">
+                <div class="breadcumb-content">
+                    <h1 class="breadcumb-title">Our Shop</h1>
+                </div>
+               
+            </div>
+        </div>
+
+        <!--==============================
+        Product Area
+        ==============================-->
+        <div class="product-area-1 space overflow-hidden">
+            @if (TempData.ContainsKey("orderplaced"))
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@TempData["orderplaced"]</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">X</button>
+                </div>
+            }
+            @if (TempData.ContainsKey("orderError"))
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>@TempData["orderError"]</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">X</button>
+                </div>
+            }
+            <div class="container">
+                <div class="shop-sort-bar">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md">
+                            <p class="woocommerce-result-count"><a href="#"><i class="fas fa-th"></i></a><a href="#"><i class="fas fa-list"></i></a>Showing 1–12 of 88 results</p>
+                        </div>
+
+                        <div class="col-md-auto">
+                            <form class="woocommerce-ordering" method="get">
+                                <select name="orderby" class="single-select orderby" aria-label="Shop order">
+                                    <option value="menu_order" selected="selected">Default Sorting</option>
+                                    <option value="popularity">Sort by popularity</option>
+                                    <option value="rating">Sort by average rating</option>
+                                    <option value="date">Sort by latest</option>
+                                    <option value="price">Sort by price: low to high</option>
+                                    <option value="price-desc">Sort by price: high to low</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-4">
+                    @foreach (var x in Model)
+                    {
+
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" style="flex: 0 0 calc(20% -10deg); margin:1px 0px; overflow:hidden;">
+                            <div class="product-img">
+                                    <a class="tag" asp-controller="Home" asp-action="ShopDetails" asp-route-id="@x.Id">ShowDetails</a>
+                                    <img src="~/StudentPainting/@x.Painting.ArtImage" alt="Product Image" style="width:400px; height:300px;">
+                                <div class="actions">
+                                  @*   <a href="cart.html" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="wishlist.html" class="icon-btn"><i class="far fa-heart"></i></a>  *@
+                                        @if (@x.Status == "Available")
+                                {
+                                    <a class="btn btn-primary btn-sm" asp-controller="Home" asp-action="OrderCheckout" asp-route-id="@x.Id">Buy Now</a>
+                                }
+                                else if (@x.Status == "Sold")
+                                {
+                                            <p class="border border-danger fs-5 fw-bold text-white bg-danger popup-content py-2 px-4">Sold</p>
+                                }
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-title"><a asp-action="ShopDetails">@x.Painting.ArtTitle</a></h3>
+                                <span class="price">pkr @x.Painting.ArtPrice <del>$550.00</del></span> 
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>}
+                </div> 
+            </div>
+        </div>
+
+        <!--==============================
+            Footer Area
+        ==============================-->
+        @Html.Partial("Footer");
+
+    </div>
+</div>
+
+<!--********************************
+        Code End  Here
+******************************** -->
+<!-- Scroll To Top -->
+<div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+</div>

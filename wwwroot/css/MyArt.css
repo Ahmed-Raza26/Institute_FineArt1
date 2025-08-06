@@ -1,0 +1,63 @@
+/* Card Styling */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; /* Let cards adjust automatically */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+/* Image Styling */
+.card-img-top {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .card-img-top img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card-img-top:hover img {
+        transform: scale(1.1); /* Zoom effect */
+    }
+
+/* Text and Button Styling */
+.card-body p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.btn {
+    transition: all 0.2s ease-in-out;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+    .btn:hover {
+        transform: scale(1.1);
+    }
+
+/* Responsive Alignment for Grid */
+.row.g-4 .col-lg-3,
+.row.g-4 .col-md-4,
+.row.g-4 .col-sm-6 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}

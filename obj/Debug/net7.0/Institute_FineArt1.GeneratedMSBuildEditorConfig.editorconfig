@@ -1,0 +1,163 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Institute_FineArt1
+build_property.RootNamespace = Institute_FineArt1
+build_property.ProjectDir = C:\Users\AHMED\Desktop\Ahmed\Eproject\MyProject\Institute_FineArt1\Institute_FineArt1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\AHMED\Desktop\Ahmed\Eproject\MyProject\Institute_FineArt1\Institute_FineArt1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Dashboard/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXGRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Dashboard/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXGxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Dashboard/orderdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXG9yZGVyZGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Dashboard/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXHJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Dashboard/selectedart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXHNlbGVjdGVkYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Dashboard/UserDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFVzZXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Dashboard/viewart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXHZpZXdhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/changepassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjaGFuZ2VwYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/Event.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/EventDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/findaccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmaW5kYWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/Location.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2NhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/ModifyArt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNb2RpZnlBcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/MyArt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeUFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/OpeningHr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcGVuaW5nSHIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/OrderCheckout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRlckNoZWNrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/OTP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPVFAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/ShopDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/StudentUploads.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdHVkZW50VXBsb2Fkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/Team.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Home/TeamDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWFtRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Shared/dnavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGRuYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Shared/dsidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGRzaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Shared/NavMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5hdk1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AHMED/Desktop/Ahmed/Eproject/MyProject/Institute_FineArt1/Institute_FineArt1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-53w10tuw68

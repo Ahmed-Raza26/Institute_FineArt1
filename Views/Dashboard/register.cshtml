@@ -1,0 +1,144 @@
+﻿@model Users
+<body class="dark">
+
+	<!-- SIDEBAR -->
+	@Html.Partial("dsidebar")
+	
+	<!-- SIDEBAR -->
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		@Html.Partial("dnavbar")
+		<div class="container-fluid bg-white py-3 ">
+		<!-- NAVBAR -->
+			<div class="head-title">
+				<div class="left">
+					<h5 class="text-light">FineArt >> <span class="text-light fs-5">Register</span></h5>
+
+				</div>
+				
+			</div>
+		<!-- SIGN UP SECTION -->
+			@if (TempData.ContainsKey("message"))
+			{
+
+				<div class="alert alert-success alert-dismissible">
+					<button type="button" class="btn-close" data-bs-dismiss="alert">X</button>
+					<strong>@TempData["message"]</strong>
+				</div>
+			}
+			@if (TempData.ContainsKey("exist1"))
+			{
+
+				<div class="alert alert-danger alert-dismissible">
+					<button type="button" class="btn-close" data-bs-dismiss="alert">X</button>
+					<strong>@TempData["exist1"]</strong>
+				</div>
+			}
+		<section id="signup" style="display: flex; justify-content: center; align-items: center; height: auto; background-color: #2A2A2A; margin-top: 10px;">
+			<div class="row" style="width: 100%; max-width: 1200px; display: flex; gap: 0px; justify-content: center;">
+				<!-- Left: Features -->
+				<div class="col-md-6" style="display: flex; flex-direction: column; justify-content: center;">
+					<div class="feature" style="display: flex; align-items: center; margin-bottom: 30px; margin-left: 100px;">
+						<div class="icon" style="background: #ff6600; padding: 15px; border-radius: 50%; margin-right: 15px;">
+							<i class="bx bx-user-circle" style="font-size: 24px; color: white;"></i>
+						</div>
+						<div>
+							<h4 style="color: white;">Free Account</h4>
+							<p style="color: white;">Create an account to explore amazing features.</p>
+						</div>
+					</div>
+					<div class="feature" style="display: flex; align-items: center; margin-bottom: 20px;  margin-left: 100px;">
+						<div class="icon" style="background: #ff6600; padding: 15px; border-radius: 50%; margin-right: 15px;">
+							<i class="bx bx-rocket" style="font-size: 24px; color: white;"></i>
+						</div>
+						<div>
+							<h4 style="color: white;">Awesome Performance</h4>
+							<p style="color: white;">Experience smooth and optimized performance.</p>
+						</div>
+					</div>
+					<div class="feature" style="display: flex; align-items: center;  margin-left: 100px;">
+						<div class="icon" style="background: #ff6600; padding: 15px; border-radius: 50%; margin-right: 15px;">
+							<i class="bx bx-globe" style="font-size: 24px; color: white;"></i>
+						</div>
+							<div>
+								<a href="c:\users\ahmed\downloads\(bugproject)\institute_fineart1\institute_fineart1\institute_fineart1\institute_fineart1\models\users.cs">c:\users\ahmed\downloads\(bugproject)\institute_fineart1\institute_fineart1\institute_fineart1\institute_fineart1\models\users.cs</a>
+							<h4 style="color: white;">Global Support</h4>
+							<p style="color: white;">We provide worldwide 24/7 support.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Right: Form -->
+				<div class="col-md-6">
+					<form method="post" enctype="multipart/form-data" style="background: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 10px;">
+						<h2 class="text-center" style="color: #333;">Create Account</h2>
+						<!-- Profile Picture Upload -->
+						<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+							<div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #ccc;">
+								<img id="preview1" src="/img/avatar.png" alt="Profile" style="width: 100%; height: 100%;">
+							</div>
+							<!-- <label for="image" style="margin-top: 10px; font-weight: bold; color: #333;">Select Profile</label> -->
+							<input type="file" class="form-control" asp-for="Image" id="image" accept="image/*" style="display: none;">
+							<button type="button" onclick="document.getElementById('image').click();" style="background-color: #ff6600; border: none; padding: 10px 15px; border-radius: 5px; color: white; cursor: pointer; margin-top: 5px;">Upload Image</button>
+							<span asp-validation-for="Image" style="color: red; font-size: 12px;"></span>
+						</div>
+						<div class="form-group">
+							<input type="text" asp-for="Name" placeholder="Enter Name Here" class="form-control" style="padding: 12px; border-radius: 8px;">
+							<span asp-validation-for="Name" style="color: red; font-size: 12px;"></span>
+						</div>
+						
+						<div class="form-group">
+							<select class="form-control" asp-for="Role" style="padding: 12px; border-radius: 8px;">
+								
+								<option value="" disabled>Select Role</option>
+								<option value="Admin">Admin</option>
+								<option value="Manager">Manager</option>
+								<option value="Teacher">Teacher</option>
+							</select>
+							<span asp-validation-for="Role" style="color: red; font-size: 12px;"></span>
+						</div>
+						<div class="form-group">
+							<input type="email" asp-for="Email" placeholder="Enter Email" class="form-control" style="padding: 12px; border-radius: 8px;">
+							<span asp-validation-for="Email" style="color: red; font-size: 12px;"></span>
+						</div>
+						<div class="form-group">
+							<input type="text" asp-for="ContactNumber" placeholder="Enter Phone Number" class="form-control" style="padding: 12px; border-radius: 8px;">
+							<span asp-validation-for="ContactNumber" style="color: red; font-size: 12px;"></span>
+						</div>
+						<div class="form-group">
+							<input type="password" asp-for="Password" placeholder="Password" class="form-control" style="padding: 12px; border-radius: 8px;">
+							<span asp-validation-for="Password" style="color: red; font-size: 12px;"></span>
+						</div>
+						<div class="form-group">
+							<input type="password"
+								   asp-for="ConfirmPassword" placeholder="Confirm Password" class="form-control" style="padding: 12px; border-radius: 8px;">
+							<span asp-validation-for="ConfirmPassword" style="color: red; font-size: 12px;"></span>
+						</div>
+
+						<button type="submit" style="background-color: #ff6600; border: none; padding: 12px; width: 100%; border-radius: 8px; color: white; font-size: 18px; cursor: pointer;">Sign Up</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- SIGN UP SECTION -->
+	</div>
+	</section>
+	<!-- CONTENT -->
+
+
+	<script>		document.getElementById('image').onchange = (event) => {
+			   const file = event.target.files[0];
+			   const preview1 = document.getElementById('preview1');
+
+			   if (file) {
+				   preview1.src = URL.createObjectURL(file); // Use URL.createObjectURL for simplicity
+				   preview1.style.display = 'block';
+
+			   } else {
+				   preview1.style.display = 'none';
+
+			   }
+		   };
+	</script>
+</body>

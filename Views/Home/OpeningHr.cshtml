@@ -1,0 +1,117 @@
+﻿@Html.Partial("NavMenu")
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <!--==============================
+        Breadcumb
+        ============================== -->
+        <div class="breadcumb-wrapper text-center" data-bg-src="~/imgg/bg/breadcrumb-bg.png">
+            <!-- bg animated image/ -->
+            <div class="container">
+                <div class="breadcumb-content">
+                    <h1 class="breadcumb-title">Opening Hours</h1>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--==============================
+        Opening Hour Area
+        ==============================-->
+        <div class="opening-hour-area space">
+            <div class="container">
+                <div class="opening-thumb mb-60">
+                    <img class="w-100" src="~/imgg/normal/open-hour-img1.png" alt="img">
+                </div>
+                <h2 class="sec-title">Opening Hours :</h2>
+                <p class="mt-30 mb-50">Discover a wealth of educational resources curated to meet the diverse needs of learners at every stage of their academic journey. From engaging lessons and interactive quizzes to in-depth tutorials and expert-led courses, our platform is designed to make learning accessible, enjoyable,</p>
+                <div class="row gy-40 gx-60">
+                    <div class="col-lg-6">
+                        <table class="table opening-hour-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td class="closing-day">Closed</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>12h - 20h</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>12h - 20h</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>12h - 20h</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>12h - 20h</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>12h - 20h</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>12h - 20h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ticket-table-wrap">
+                            <div class="ticket-wrap">
+                                <h3 class="page-subtitle">Ticket Info :</h3>
+                                <p>Discover a wealth of educational resources curated to meet the diverse needs of learners at every stage of  the museum</p>
+                            </div>
+                            <table class="table ticket-table">
+                                <tbody>
+                                    <tr>
+                                        <td>General :</td>
+                                        <td>$20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Children :</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reduced :</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Main Exhibit</td>
+                                        <td>Free</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==============================
+            Footer Area
+        ==============================-->
+     @Html.Partial("Footer");
+
+    </div>
+</div>
+
+<!--********************************
+        Code End  Here
+******************************** -->
+<!-- Scroll To Top -->
+<div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+</div>

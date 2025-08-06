@@ -1,0 +1,69 @@
+﻿@model Users
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+<!-- Mirrored from tfhtml.themepul.com/artvista/demo/home-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2025 09:37:48 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>FineArt - Institute of Art</title>
+	<meta name="description" content="Artvista - Museum & Art Gallery HTML Template">
+	<meta name="keywords" content="Artvista - Museum & Art Gallery HTML Template">
+	<meta name="robots" content="INDEX,FOLLOW">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Favicons - Place favicon.ico in the root directory -->
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.html">
+	<meta name="theme-color" content="#ffffff">
+
+	<!--==============================
+	  Google Fonts
+	============================== -->
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="~/asset/css/style.css">
+	<link rel="stylesheet" href="~/asset/css/signin.css">
+
+</head>
+<body class="dark"	>
+
+
+	<!-- NAVBAR -->
+	<!-- LOGIN SECTION -->
+
+	<div class="login-container">
+		
+		<section id="login">
+			<form method="post" class="login-form">
+				<h2>Login</h2>
+				<div class="form-group">
+					<input type="email" asp-for="Email" placeholder="Enter Email" required>
+					<span asp-validation-for="Image" style="color: red; font-size: 12px;"></span>
+				</div>
+				<div class="form-group">
+					<input type="password" asp-for="Password" placeholder="Password" required>
+					<span asp-validation-for="Image" style="color: red; font-size: 12px;"></span>
+				</div>
+				<button type="submit">Login</button>
+				<p class="signup-link">Don't have an account? Contact to HR Team!</p>
+				@if (TempData.ContainsKey("message"))
+				{
+					<div class="alert alert-danger">
+					<span>@TempData["message"]</span>
+				
+			</div>
+				}
+			</form>
+		</section>
+	</div>
+	<!-- LOGIN SECTION -->
+	<!-- </section> -->
+
+</body>
+</html>

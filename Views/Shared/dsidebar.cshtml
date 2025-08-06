@@ -1,0 +1,76 @@
+﻿
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+<!-- Mirrored from tfhtml.themepul.com/artvista/demo/home-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2025 09:37:48 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>FineArt - Institute of Art</title>
+    <meta name="description" content="Artvista - Museum & Art Gallery HTML Template">
+    <meta name="keywords" content="Artvista - Museum & Art Gallery HTML Template">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.html">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--==============================
+      Google Fonts
+    ============================== -->
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="~/asset/css/style.css">
+    <link rel="stylesheet" href="~/asset/css/signin.css">
+
+</head>
+<section id="sidebar">
+
+	<a asp-controller="Dashboard" asp-action="dashboard" class="brand">
+		<i class='bx bxs-smile'></i>
+		<span class="text">FineArt</span>
+	</a>
+	<div class="profile-section" style=" margin-bottom: 15px;">
+		<img src="~/asset/StaffImages/@(Context.Session.GetString("staffimage"))" alt="Profile Picture" style="width: 120px; height: 120px; border:4px solid #ff6600; border-radius: 50%; object-fit: cover; margin-left:65px;">
+	</div>
+		@{
+			var userId = Context.Session.GetInt32("staffId");
+			var userrole = Context.Session.GetString("staffrole");
+		}
+	<ul class="side-menu top">
+		<li>
+			<a asp-controller="Dashboard" asp-action="dashboard"><i class='bx bxs-dashboard'></i> <span class="text">Dashboard</span></a>
+		</li>
+		@if (userId != null && (userrole == "Admin" || userrole == "Manager"))
+		{
+			<li><a asp-controller="Dashboard" asp-action="UserDetails"><i class='bx bxs-user-detail'></i> <span class="text">User Details</span></a></li>
+		}
+		<li><a asp-controller="Dashboard" asp-action="OrderDetails"><i class='bx bxs-shopping-bag-alt'></i> <span class="text">Order Details</span></a></li>
+		<li><a asp-controller="Dashboard" asp-action="viewart"><i class='bx bxs-palette'></i> <span class="text">Student's Art</span></a></li>
+		<li><a asp-controller="Dashboard" asp-action="selectedart"><i class='bx bxs-palette'></i> <span class="text">Best Arts </span></a></li>
+		@if (userId != null && userrole == "Admin")
+		{
+			<li><a asp-controller="Dashboard" asp-action="register"><i class='bx bxs-group'></i> <span class="text">Register Staff</span></a></li>
+
+		}
+
+		@* @if (userId == null)
+		{
+
+		<li><a asp-controller="Dashboard" asp-action="login"><i class='bx bxs-group'></i> <span class="text">Login</span></a></li>
+
+		} *@
+		
+	</ul>
+	<ul class="side-menu">
+		<li><a asp-controller="Dashboard" asp-action="Logout" class="logout"><i class='bx bxs-log-out-circle'></i> <span class="text">Logout</span></a></li>
+	</ul>
+</section>

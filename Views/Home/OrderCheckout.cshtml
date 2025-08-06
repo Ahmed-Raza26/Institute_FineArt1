@@ -1,0 +1,98 @@
+﻿@model BestArts
+@Html.Partial("NavMenu") <!-- Navbar -->
+
+<div id="smooth-wrapper">
+	<div id="smooth-content">
+		<!-- Breadcrumb Section -->
+		<div class="breadcrumb-section text-center" data-bg-src="~/img/bg/breadcrumb-bg.png">
+			<div class="container">
+				<div class="breadcrumb-content">
+					<h1 class="breadcrumb-title">Our Shop</h1>
+				</div>
+			</div>
+		</div>
+
+		<!-- Checkout Section -->
+		<div class="checkout-wrapper-container">
+			<!-- Product Card Section -->
+			<div class="product-section-card">
+				<div class="product-section-image">
+					<img src="~/StudentPainting/@Model.Painting.ArtImage" alt="Product Image" />
+				</div>
+				<div class="product-section-info">
+					<h2>Product Name</h2>
+					<p>@Model.Painting.ArtDetail</p>
+					<div class="product-rating">
+						<span>⭐⭐⭐⭐⭐</span> <!-- Example Rating -->
+					</div>
+					<div class="artist-name">
+						<span>Artist: @Model.Painting.User1.Name</span>
+					</div>
+				</div>
+				<div class="order-summary-section">
+					<h4>Order Summary</h4>
+					<div class="summary-item">
+						<span>Product Name</span>
+						<span>PKR @Model.Painting.ArtPrice</span>
+					</div>
+					<div class="summary-item">
+						<span>GST (5%)</span>
+						<span>PKR @ViewBag.gst</span>
+					</div>
+					<div class="summary-item">
+						<span>Delivery Fee</span>
+						<span>PKR @ViewBag.delivery</span>
+					</div>
+					<div class="summary-total">
+						<span>Total</span>
+						<span>PKR @ViewBag.total</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Checkout Form Section -->
+			<div class="checkout-form-container">
+				<h1 class="text-2xl font-bold mb-6 text-orange-500">Checkout</h1>
+				<form method="post">
+					<!-- Billing Details -->
+					<div class="grid grid-cols-2 gap-4">
+						<div class="form-group">
+							<input type="hidden" id="id" name="TopArtId" value="@Model.Id" />
+						</div>
+						<div class="form-group">
+							<label for="FullName">Full Name</label>
+							<input type="text" id="FullName" name="FullName" value="@Context.Session.GetString("user")" placeholder="Enter your full name" required />
+						</div>
+						<div class="form-group">
+							<label for="Email">Email Address</label>
+							<input type="email" id="Email" name="Email" value="@Context.Session.GetString("email")" placeholder="Enter your email" required />
+						</div>
+						<div class="form-group">
+							<label for="Phone">Phone Number</label>
+							<input type="tel" id="Phone" name="Phone" value="@Context.Session.GetString("phone")" placeholder="Enter your phone number" required />
+						</div>
+						<div class="form-group">
+							<label for="Address">Address</label>
+							<input type="text" id="Address" name="Address" placeholder="Enter your address" required />
+						</div>
+					</div>
+
+					<!-- Payment Method -->
+					<div class="payment-method-field">
+						<input type="hidden" name="price" value="@ViewBag.total" readonly />
+						<input type="text" name="PaymentMethod" value="Cash on Delivery" readonly />
+					</div>
+
+					<!-- Submit Button -->
+					<button type="submit" class="checkout-button">Place Order</button>
+
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+@Html.Partial("Footer") <!-- Footer -->

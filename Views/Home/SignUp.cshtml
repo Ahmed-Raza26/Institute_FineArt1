@@ -1,0 +1,105 @@
+﻿@model Users
+@Html.Partial("NavMenu")
+<div id="smooth-wrapper">
+	<div id="smooth-content">
+		<!--==============================
+		Breadcumb
+		============================== -->
+		<div class="breadcumb-wrapper text-center" data-bg-src="~/img/bg/breadcrumb-bg.png">
+			<!-- bg animated image/ -->
+			<div class="container">
+				<div class="breadcumb-content">
+					<h1 class="breadcumb-title">SignUp</h1>
+				</div>
+
+			</div>
+		</div>
+		<div class="signup-container">
+			<div class="signup-content">
+				<!-- Left Section -->
+				<div class="signup-image">
+					<img src="~/img/blog/blog_1_2.png" alt="Signup Illustration" width="100%" height="100%" />
+				</div>
+
+				<!-- Right Section -->
+				<div class="signup-form-section">
+					<h2 class="fs-2">Sign Up</h2>
+					@if (TempData.ContainsKey("message"))
+					{
+
+						<div class="alert alert-success alert-dismissible">
+							<button type="button" class="btn-close" data-bs-dismiss="alert">X</button>
+							<strong>@TempData["message"]</strong>
+						</div>
+					}
+					@if (TempData.ContainsKey("exist2"))
+					{
+
+						<div class="alert alert-danger alert-dismissible">
+							<button type="button" class="btn-close" data-bs-dismiss="alert">X</button>
+							<strong>@TempData["exist2"]</strong>
+						</div>
+					}
+					<form class="signup-form" method="post" enctype="multipart/form-data">
+						<div class="form-group">
+							<div class="d-flex justify-content-center align-items-center mx-auto  rounded-circle overflow-hidden" style="width: 120px; height: 120px;">
+								<img id="preview1" src="~/img/avatar.png" alt="Profile" class="w-100 h-100">
+							</div>
+							<label for="image" class="form-label mt-3">Select Profile</label>
+							<input type="file" class="form-control" asp-for="Image" id="image" accept="image/*">
+							<span asp-validation-for="Image" class="text-danger small"></span>
+						</div>
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" id="name" asp-for="Name" placeholder="Enter your name" />
+							<span asp-validation-for="Name" class="text-danger small"></span>
+						</div>
+						<div class="form-group">
+							<label for="conact">Contact</label>
+							<input type="text" id="contact" asp-for="ContactNumber" placeholder="Enter your Contact number" />
+							<span asp-validation-for="ContactNumber" class="text-danger small"></span>
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" asp-for="Email" placeholder="Enter your email" />
+							<span asp-validation-for="Email" class="text-danger small"></span>
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" id="password" asp-for="Password" placeholder="Enter your password" />
+							<span asp-validation-for="Password" class="text-danger small"></span>
+						</div>
+						<div class="form-group">
+							<label for="confirm-password">Confirm Password</label>
+							<input type="password" id="confirm-password" asp-for="ConfirmPassword" placeholder="Confirm your password" />
+							<span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+						</div>
+						<button type="submit" class="btn-submit">Sign Up</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		@Html.Partial("Footer");
+	</div>
+</div>
+<!-- Scroll To Top -->
+<div class="scroll-top">
+	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+	</svg>
+</div>
+<script>
+	document.getElementById('image').onchange = (event) => {
+		const file = event.target.files[0];
+		const preview1 = document.getElementById('preview1');
+
+		if (file) {
+			preview1.src = URL.createObjectURL(file); // Use URL.createObjectURL for simplicity
+			preview1.style.display = 'block';
+
+		} else {
+			preview1.style.display = 'none';
+
+		}
+	};
+</script>
